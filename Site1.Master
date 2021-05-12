@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Restaurant_Website.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Haveli Rastaurant</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+               
+                <style>
+                div.gallery {
+                    margin: 5px;
+                    border: 1px solid #ccc;
+                    float: left;
+                    width: 100px;
+                }
+
+                div.gallery:hover {
+                    border: 1px solid #777;
+                }
+
+                div.gallery img {
+                    width: 100%;
+                    height: auto;
+                }
+
+
+                * {
+                    box-sizing: border-box;
+                }
+
+                body {
+                  margin: 0;
+                }
+
+                .topnav {
+                    overflow: hidden;
+                    background-color: #333;
+                }
+                .header {
+                    background-image: url("images.jpg");
+                    padding: 29px;
+                    text-align: center;
+                    text-decoration: underline;
+                    color: #DDDDDD;
+                    letter-spacing: 5px;
+                    text-shadow: 8px 4px black;
+                }
+
+
+
+                /* Style the topnav links */
+                .topnav a {
+                    float: left;
+                    display: block;
+                    color: #f2f2f2;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+
+
+
+                /* Create three equal columns that floats next to each other */
+                .column {
+                    float: left;
+                    width: 33.33%;
+                    padding: 15px;
+                }
+        
+                </style>
+        <div class="header">
+                 <h1>HAVELI</h1>
+                  <p style="color:#DDDDDD">Shaan-e-Jalandhar</p>
+                </div>
+
+                <div class="topnav">
+	                <a href="index.aspx">Home</a>
+                  <a href="food-menu.aspx">Food Menu</a>
+                  <a href="table-booking.aspx">Table Booking</a>
+                  <a href="booking_status.aspx">Your Bookings</a>
+                  <a href="photo_gallery.aspx">Photo Gallery</a>
+                  <a href="About_Us.aspx">About Us</a>
+                  <a href="login.aspx">Login/Register</a>
+                  <a href="Log_out.aspx">Logout</a>
+                </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentBody" runat="server">
+                
+
+                
+
+            </asp:ContentPlaceHolder>
+        </div>
+        
+    </form>
+</body>
+
+
+</html>
